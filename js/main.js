@@ -134,13 +134,13 @@ let categoryName = ''
 
 
 const resetGame = () => {
-	mainPhoto.src = './img/wisielec0.png';
+	
 	refresh.classList.add('animation');
 	setTimeout(() => {
 		refresh.classList.remove('animation');
 	}, 500);
 	start.classList.remove('none');
-	mainPhoto.src = '';
+	mainPhoto.src = './img/wisielec0.png';
 	randomWord = undefined;
 	emptyWordLetter = [];
 	hasloPlace.textContent = '';
