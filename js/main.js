@@ -232,7 +232,7 @@ const startGame = () => {
 				if (hasloPlace.textContent === randomWord) {
 					
 					resultText.textContent = 'BRAWO WYGRYWASZ!'
-                    resultText.style.color = 'rgb(228, 31, 31)';
+                    			resultText.style.color = '#7CFC00';
 					setTimeout(resetGame, 1000);
 					return;
 				}
