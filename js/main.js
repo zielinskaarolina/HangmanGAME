@@ -100,16 +100,16 @@ let plantArray = ['JEMIOŁA','RÓŻA','FIOŁEK']
 let christmasArray = ['PIEROGI','PREZENTY','MIKOŁAJ']
 
 const imagesHangman = [
-	'img/Wisielec2.png',
-	'img/Wisielec3.png',
-	'img/Wisielec4.png',
-	'img/Wisielec5.png',
-	'img/Wisielec6.png',
-	'img/Wisielec7.png',
-	'img/Wisielec8.png',
-	'img/Wisielec9.png',
-	'img/Wisielec10.png',
-	'img/Wisielec11.png',
+	'./img/Wisielec2.png',
+	'./img/Wisielec3.png',
+	'./img/Wisielec4.png',
+	'./img/Wisielec5.png',
+	'./img/Wisielec6.png',
+	'./img/Wisielec7.png',
+	'./img/Wisielec8.png',
+	'./img/Wisielec9.png',
+	'./img/Wisielec10.png',
+	'./img/Wisielec11.png',
 ];
 
 //STWORZENIE <P> Z CAŁYM ALFABETEM
@@ -134,7 +134,7 @@ let categoryName = ''
 
 
 const resetGame = () => {
-	mainPhoto.src = 'img/wisielec0.png';
+	mainPhoto.src = './img/wisielec0.png';
 	refresh.classList.add('animation');
 	setTimeout(() => {
 		refresh.classList.remove('animation');
