@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+.tytul{
+    position: absolute;
+    top: 5%;
+    font-size: 3rem;
+    z-index: 1;
+}
+
+.start{
+    position: absolute;
+    top: 16%;
+    width: 100px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid;
+    font-weight: 800;
+    z-index: 4; 
+}
+
+
+.haslo{
+    position: absolute;
+    top: 23%;
+    font-size: 3rem;
+}
+
+.mainPhoto{
+    position: absolute;
+    top: 35%;
+}
+.secondPhoto{
+    width: 65px;
+    z-index: 1;
+    position: absolute;
+    top: -30%;
+}
+
+@keyframes startGameAnimation {
+
+    60%{
+        top: -4%;
+    }
+    70%{
+        top: -1%;
+    }
+    100%{
+        top: -4%;
+    }
+   
+}
+.result{
+    position: absolute;
+    bottom: 31%;
+    z-index: 3;
+    font-weight: 800;
+    color: rgb(41, 212, 41);
+}
+.alpa{
+    z-index: 1;
+    position: absolute;
+    bottom: 7%;
+    width: 88vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.alpa p{
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    display: inline-block;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.none{
+    display: none;
+}
+.refresh{
+    font-size: 2.5rem;
+    position: absolute;
+    right: 3%;
+    top: 2%;
+    font-weight: 600;
+}
+.refresh.animation{
+    animation: rotate 0.5s linear ;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0)
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.winAndLoses{
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: 3%;
+    font-weight: 600;
+    color: rgb(129, 126, 126);
+}
+
+/* CATEGORY */
+.welcome{
+    text-align: center;
+    overflow: hidden;
+    padding: 0 1rem;
+}
+.welcomeB{
+    background-color: white;
+    margin: 1rem;
+    width: 100px;
+    height: 30px;
+    border: 3px solid black;
+    font-weight: 900;
+}
+
+.category{
+    align-self: flex-start;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    
+}
+.category h1{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.categoryName{
+    width: 80vw;
+    height: 10vh;
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.category.none{
+    display: none;
+}
+.category div:hover{
+    color: white;
+    background-color: black;
+}
