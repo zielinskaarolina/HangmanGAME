@@ -4,6 +4,7 @@ const sectionWelcome = document.querySelector('.welcome');
 const welcome = document.querySelector('.welcomeH');
 const buttonWelcome = document.querySelector('.welcomeB');
 const categoryPlace = document.querySelector('.category');
+const start = document.querySelector('.start');
 
 let welcomeText = 'Do u wanna play handman?';
 let welcomeArray = [...welcomeText];
@@ -22,7 +23,9 @@ const chooseCategory = () => {
             console.log(catArray);
             categoryPlace.classList.add('none')
             mainGame.classList.remove('none')
-            startGame()
+            start.addEventListener("click",()=>{
+		    startGame()
+	    })
         })
     })
 };
@@ -47,7 +50,6 @@ const stopInterval = setInterval(showText, 100);
 
 //DOM
 const alphabetPlace = document.querySelector('.alpa');
-const start = document.querySelector('.start');
 const secondPhoto = document.querySelector('.secondPhoto');
 const hasloPlace = document.querySelector('.haslo');
 const mainPhoto = document.querySelector('.mainPhoto');
@@ -255,6 +257,5 @@ const startGame = () => {
 };
 
 //EVENTY
-start.addEventListener('click', startGame);
 refresh.addEventListener('click', resetGame);
 
