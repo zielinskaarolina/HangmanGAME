@@ -142,7 +142,7 @@ const resetGame = () => {
 		refresh.classList.remove('animation');
 	}, 500);
 	start.classList.remove('none');
-	mainPhoto.src = './img/wisielec0.png'
+	mainPhoto.src = './img/Wisielec0.png'
 	randomWord = undefined;
 	emptyWordLetter = [];
 	hasloPlace.textContent = '';
