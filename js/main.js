@@ -193,7 +193,7 @@ const checkLetter = (rand, lett) => {
 
 
 const startGame = () => {
-
+	mainPhoto.src = './img/Wisielec0.png'
     console.log("start");
 	start.classList.add('none');
 	photoAnimation();
