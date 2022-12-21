@@ -44,9 +44,6 @@ body{
     top: 23%;
     font-size: 3rem;
 }
-a{
-    color: black;
-}
 
 .mainPhoto{
     position: absolute;
@@ -175,4 +172,7 @@ a{
 .category div:hover{
     color: white;
     background-color: black;
+}
+button{
+    color: black;
 }
