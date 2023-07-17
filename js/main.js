@@ -6,7 +6,7 @@ const buttonWelcome = document.querySelector('.welcomeB');
 const categoryPlace = document.querySelector('.category');
 const start = document.querySelector('.start');
 
-let welcomeText = 'Do u wanna play handman?';
+let welcomeText = 'Do u wanna play hangman?';
 let welcomeArray = [...welcomeText];
 
 
